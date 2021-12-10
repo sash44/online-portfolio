@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.blg_h1 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    text-align: center;
+    padding: 32px;
+    color: #000000;
+    font-size: 2.5rem bold;
+   
+}
+.column {
+  display: flex;
+  flex-direction: column 1fr 1fr 1fr 1fr;
+  justify-content:space-around;
+  -ms-flex: 25%; 
+  flex: 25%;
+  padding: 0 4px;
+}
+.column-item {
+    display: block;
+    margin: 0 0 24px 0;
+    padding: 12px;
+    transition: all 200ms;
+}
+.column-item:hover {
+    transform: translateY(-6px);
+    transition: all 200ms;
+}
+
+.column-item img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.blg_h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 1.6em;
+    font-weight: 200px;
+}
+.blg_p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.blg_button {
+    text-decoration: none;
+    color: #d3be06;;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+    overflow: scroll;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background-color: #c2b96c;
+    border-radius: 5px;
+    width: 80%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .content {
+    max-height: 120%;
+    font-family: 'Raleway', sans-serif;
+}
+@media screen and (max-width: 680px){
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .popup{
+        width: 80%;
+        height: 160%;
+    }
+}
+@media screen and (min-width:681px) and (max-width: 995px){
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .popup {
+        width: 80%;
+    }
+    .header{
+        position: absolute;
+    }
+}
+

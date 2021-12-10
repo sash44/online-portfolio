@@ -1,0 +1,56 @@
+.subsection2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+
+.projectcard {
+  width: 300px;
+  height: 500px;
+  -webkit-box-shadow: 5px 5px 20px #8d8d8d;
+          box-shadow: 5px 5px 20px #8d8d8d;
+  margin: 10px;
+  color: #1b1b46;
+}
+
+.project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.project-img {
+  margin-top: 25px;
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #d3be06;
+}
+/*# sourceMappingURL=projects.css.map */

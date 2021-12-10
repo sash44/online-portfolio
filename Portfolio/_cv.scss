@@ -1,0 +1,159 @@
+
+  .header {
+    background-color: #ffffff;
+    position:relative;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 40px;
+    margin-left: 150px;
+    background: rgb(221, 228, 247);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px (rgb(0, 0, 1));
+  }
+  .container .left-side{
+    position: relative;
+    background: rgb(1, 54, 97);
+    padding: 40px;
+  }
+  
+  .container .right-side{
+    position: relative;
+    background: rgb(218, 215, 215);
+    padding: 40px;
+  }
+  .profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(202, 197, 197, 0.767);
+  }
+  img{
+    height: 200px;
+    width: 200px;
+  }
+  .profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    overflow: hidden;
+  }
+  .profileText h2 {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5em;
+  }
+  .profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 200;
+  }
+  .contactInfo{
+    padding-top: 40px;
+  }
+  .title{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+  }
+  .contactInfo ul {
+    position: relative;
+    padding: 0.2em;
+  }
+  .contactInfo ul li {
+    position: relative;
+    list-style-type: none;
+    margin: 10px;
+    color: white;
+  }
+  .contactInfo .text{
+    font-size: 12px;
+  }
+  .contactInfo.education h4{
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5;
+  }
+  .contactInfo.education h5{
+    font-weight: 200;
+    font-size: 0.8em;
+    padding: 5px;
+  }
+  .contactInfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: black;
+    display: block;
+    margin-top: 5px;
+  }
+  .contactInfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(255, 238, 0);
+  }
+  .title2{
+  padding: 20px;
+  margin: 10px;
+  }
+  p{
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+  }
+  .year-company h5{
+    padding: 2px;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  .about-skills .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    display: block;
+    background: black;
+    margin-top: 2px;
+  }
+  .about-skills .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(255, 238, 0);
+  }
+
+  @media screen and (max-width: 645px) {
+    .container{
+      width: 530px;
+      margin-left: 10px;
+    }
+    .container .left-side{
+      position: relative;
+      padding: 20px;
+      width: 240px;
+    }
+    .container .right-side{
+      position: relative;
+      padding: 20px;
+      width: 300px
+    }
+  }
+
+
